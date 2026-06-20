@@ -4,9 +4,8 @@ suppressPackageStartupMessages({
   library(sandwich); library(lmtest)
 })
 
-BASE_DIR   <- "/Users/mnseokbin/Library/Mobile Documents/com~apple~CloudDocs/Seokbin/Project/In-Progress/Unused/Analysis"
-PANEL_FILE <- file.path(BASE_DIR, "panel_unused.xlsx")
-OUT_DIR    <- BASE_DIR
+PANEL_FILE <- "panel_unused.xlsx"
+OUT_DIR    <- "."
 TOPS <- c(0.25)
 
 panel_wide <- read_excel(PANEL_FILE)
